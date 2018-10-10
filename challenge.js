@@ -48,12 +48,14 @@ pause.addEventListener("click", function(event) {
         minus.disabled = true;
         plus.disabled = true;
         heart.disabled = true;
+        submit.disabled = true;
         clearInterval(setInt);
     } else {
         pause.innerText = "pause";
         minus.disabled = false;
         plus.disabled = false;
         heart.disabled = false;
+        submit.disabled = false;
         setInt = setInterval(incrementSeconds, 1000)
     }
     
